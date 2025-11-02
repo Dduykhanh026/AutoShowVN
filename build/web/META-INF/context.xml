@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/AutoShowVN">
+    <!-- Thêm resource để quản lý connections tốt hơn -->
+    <Resource name="jdbc/mysql" 
+              auth="Container" 
+              type="javax.sql.DataSource"
+              maxTotal="20" 
+              maxIdle="10"
+              maxWaitMillis="-1"
+              username="your_username" 
+              password="your_password"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/your_database?useSSL=false&amp;serverTimezone=UTC"/>
+</Context>

@@ -1,0 +1,6 @@
+<web-app>
+    <!-- Thêm vào cuối file, trước </web-app> -->
+    <listener>
+        <listener-class>com.mysql.cj.jdbc.AbandonedConnectionCleanupThread</listener-class>
+    </listener>
+</web-app>
